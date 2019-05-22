@@ -9,7 +9,22 @@
   </title>
   <meta name="description" content="hello world. you have reached matt pua.">
   <meta name="author" content="matt pua">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <meta name="robots" content="index,follow">
+  <meta name="googlebot" content="index,follow">
+  <!-- <meta name="twitter:site" content="" > -->
+  <!-- <meta name="twitter:creator" content="" > -->
+  <meta property="og:url" content="https://www.mattpua.com/">
+  <meta property="og:type" content="blog">
+  <meta property="og:title" content="matt pua | software engineer | toronto, canada">
+  <meta property="og:description" content="hello world. you have reached matt pua.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="matt pua">
+  <!-- <meta property="og:image:width" content="1200"> -->
+  <!-- <meta property="og:image:height" content="630"> -->
+  <meta property="og:site_name" content="mattpua">
+  <link rel="canonical" href="https://www.mattpua.com/">
+
+
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49806715-6"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -27,26 +42,43 @@
 
 <body>
   <header>
-    <img id="logo" src="assets/logo_no_text.svg" alt="Logo" />
+    <img class="logo" src="assets/logo_no_text.svg" alt="Logo" />
     <span>toronto, canada</span>
   </header>
-  <section class="left">
-    <h1>hello world.</h1>
-    <h2>you have reached matt pua.</h2>
-    <div class="seperator"></div>
-    <h2>software engineer out of toronto.</h2>
-    <div class="seperator"></div>
-    <div class="links">
-      <a href="mailto:contact@mattpua.com">contact@mattpua.com</a>
-      <a class="secondary" target="_blank" href="https://www.linkedin.com/in/matthewpua/">linkedin</a>
-      <a class="secondary" target="_blank" href="https://medium.com/@matthewpua">medium</a>
-      <a class="secondary" target="_blank" href="https://github.com/MattPua">github</a>
-    </div>
-  </section>
-  <section class="right">
-    <img src="assets/grouped_logos.svg"
-      alt="javascript, react, jenkins, typescript, angular, adobe xd, node, flutter, sass, aws, git, java" />
-  </section>
+  <main>
+    <section id="landing">
+      <section class="left">
+        <h1>hello world.</h1>
+        <h2>you have reached matt pua.</h2>
+        <div class="seperator"></div>
+        <h2>software engineer out of toronto.</h2>
+        <div class="seperator"></div>
+        <div class="links">
+          <a href="mailto:contact@mattpua.com">contact@mattpua.com</a>
+          <a class="secondary" target="_blank" href="https://www.linkedin.com/in/matthewpua/">linkedin</a>
+          <a class="secondary" target="_blank" href="https://medium.com/@matthewpua">medium</a>
+          <a class="secondary" target="_blank" href="https://github.com/MattPua">github</a>
+        </div>
+        <div id="loader">
+          <img class="logo" src="assets/logo_no_text.svg" alt="Logo" />
+          <h2>knocking...</h2>
+          <svg class="pulse" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+            <circle id="Oval" cx="512" cy="512" r="512"></circle>
+            <circle id="Oval" cx="512" cy="512" r="512"></circle>
+            <circle id="Oval" cx="512" cy="512" r="512"></circle>
+          </svg>
+        </div>
+      </section>
+      <section class="right">
+        <img src="assets/grouped_logos.svg"
+          alt="javascript, react, jenkins, typescript, angular, adobe xd, node, flutter, sass, aws, git, java" />
+      </section>
+    </section>
+    <section id="content">
+      
+    </section>
+  </main>
 </body>
 
 </html>
