@@ -20,7 +20,7 @@ header {
 
 #landing {
   display: grid;
-  grid-template-columns: 25% 25% 10% 40%;
+  grid-template-columns: 35% 15% 20% 30%;
   grid-template-rows: auto;
   grid-template-areas: "header header header header""left left . right";
 }
@@ -177,6 +177,22 @@ div.seperator {
     width: 100%;
     height: 100%;
   }
+
+  html::after {
+    background-image: url("./assets/sign.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    opacity: 0.15;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 
@@ -188,7 +204,7 @@ div.seperator {
 
 @media (max-width: 325px) {
   html {
-    font-size: 10px;
+    font-size: 9px;
   }
 }
 
